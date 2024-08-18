@@ -2,17 +2,12 @@
 import "./Home.css";
 import bg from "../../assets/image.png";
 import { FaRupeeSign } from "react-icons/fa";
-import {downloadResume} from '../../helpers/Helerps';
+import {downloadResume, NavbarProps} from '../../helpers/Helerps';
 
-interface NavbarProps {
-  theme: "light" | "dark";
-  setTheme: (theme: "light" | "dark") => void;
-}
-
-const Home = ({ theme, setTheme }: NavbarProps) => {
-  const toggle_mode = () => {
-    theme == "light" ? setTheme("dark") : setTheme("light");
-  };
+const Home = ({}:NavbarProps) => {
+//   const toggle_mode = () => {
+//     theme == "light" ? setTheme("dark") : setTheme("light");
+//   };
   return (
     <section id="intro">
       <div className="introContent">

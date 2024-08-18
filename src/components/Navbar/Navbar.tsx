@@ -6,13 +6,8 @@ import search_icon_dark from "../../assets/search-b.png";
 import toggle_light from "../../assets/night.png";
 import toggle_dark from "../../assets/day.png";
 import { useState } from "react";
-import { downloadResume, redirectToExternalLink } from "../../helpers/Helerps";
+import { downloadResume, NavbarProps, redirectToExternalLink } from "../../helpers/Helerps";
 import { Link } from "react-router-dom";
-
-interface NavbarProps {
-  theme: "light" | "dark";
-  setTheme: (theme: "light" | "dark") => void;
-}
 
 const Navbar = ({ theme, setTheme }: NavbarProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

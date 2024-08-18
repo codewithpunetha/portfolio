@@ -10,3 +10,11 @@ export const downloadResume = () => {
 export const redirectToExternalLink = () =>{
     window.open("https://github.com/codewithpunetha?tab=repositories", "_blank");
 }
+
+
+export type Theme = "light" | "dark";
+
+export interface NavbarProps {
+  theme: Theme;
+  setTheme: (theme: "light" | "dark") => void;
+}
