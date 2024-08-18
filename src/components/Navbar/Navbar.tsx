@@ -1,12 +1,16 @@
 import "./Navbar.css";
-import logo_light from "../../assets/aman.png";
-import logo_dark from "../../assets/aman2.png";
-import search_icon_light from "../../assets/search-w.png";
-import search_icon_dark from "../../assets/search-b.png";
-import toggle_light from "../../assets/night.png";
-import toggle_dark from "../../assets/day.png";
+import logo_light from "/assets/aman.png";
+import logo_dark from "/assets/aman2.png";
+import search_icon_light from "/assets/search-w.png";
+import search_icon_dark from "/assets/search-b.png";
+import toggle_light from "/assets/night.png";
+import toggle_dark from "/assets/day.png";
 import { useState } from "react";
-import { downloadResume, NavbarProps, redirectToExternalLink } from "../../helpers/Helerps";
+import {
+  downloadResume,
+  NavbarProps,
+  redirectToExternalLink,
+} from "../../helpers/Helerps";
 import { Link } from "react-router-dom";
 
 const Navbar = ({ theme, setTheme }: NavbarProps) => {

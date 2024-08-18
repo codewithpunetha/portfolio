@@ -1,6 +1,6 @@
 
 import "./Home.css";
-import bg from "../../assets/image.png";
+import bg from "/assets/image.png";
 import { FaRupeeSign } from "react-icons/fa";
 import {downloadResume, NavbarProps} from '../../helpers/Helerps';
 
