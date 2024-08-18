@@ -1,8 +1,6 @@
-import React from "react";
+
 import "./Home.css";
 import bg from "../../assets/image.png";
-import hireme from "../../assets/hireme.png";
-import { Link } from "react-scroll";
 import { FaRupeeSign } from "react-icons/fa";
 import {downloadResume} from '../../helpers/Helerps';
 
@@ -20,7 +18,6 @@ const Home = ({ theme, setTheme }: NavbarProps) => {
       <div className="introContent">
         <span className="hello">Hello</span>
         <span className="introText">
-          {" "}
           I'm <span className="introName">Aman</span> <br />
           Software Developer
         </span>
