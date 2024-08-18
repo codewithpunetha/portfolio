@@ -1,0 +1,176 @@
+#intro{
+    margin: 15px 7%;
+    overflow: hidden;
+    display: flex;
+    position: absolute;
+}
+
+.bg{
+    height: 100vh;
+    top: 0rem;
+    right: -4rem;
+    z-index:auto;
+    object-fit: cover;
+    position: relative;
+}
+
+.introContent{
+    height: 100vh;
+    width: 100%;
+    text-align: left;
+    padding: 1rem;
+    font-size: 3rem;
+    font-weight: 700;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hello{
+    font-size: 1.75rem;
+    font-weight: 100;
+}
+
+.introName{
+    color: darkgreen;
+}
+
+.introPara{
+    font-weight: 100;
+    font-size: medium;
+}
+
+.dark .hello{
+    color: #fff;
+}
+
+.dark .introContent{
+    color: #fff;
+}
+
+.dark .introPara{
+    color: #fff;
+}
+
+.hireMe {
+    background: linear-gradient(135deg, #28a745, #218838);
+    border-radius: 50px;
+    width: 200px; /* Adjusted width for better appearance */
+    font-size: 1.2rem;
+    color: #fff;
+    padding: 10px 20px; /* Added padding for better spacing */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 10px -2px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Added box shadow for depth */
+}
+
+.hireMe .icon {
+    margin-right: 8px; /* Spacing between icon and text */
+    padding: 3px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3); /* Subtle background for icon */
+}
+
+.hireMe:hover {
+    background: linear-gradient(135deg, #218838, #1e7e34); /* Darker green on hover */
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.hireMe span {
+    text-align: center;
+    flex: 1; /* Ensures the text takes up available space */
+}
+
+
+@media (max-width:1024px) {
+
+    .bg {
+        height: auto;
+        width: 50%;
+        right: -5rem;
+    }
+
+    .introContent {
+        height: auto;
+        padding: 1rem;
+        font-size: 4rem;
+    }
+
+    .introText{
+        font-size: 2rem;
+    }
+
+    .introPara {
+        font-size: 1.5rem;
+    }
+    
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .bg {
+        height: auto;
+        width: 45%;
+        right: -2rem;
+    }
+
+    .hello {
+        font-size: 1rem;
+    }
+
+    .introContent {
+        height: auto;
+        padding: 1rem;
+        font-size: 2rem;
+    }
+
+    .introText{
+        font-size: 2rem;
+    }
+
+    .introPara {
+        font-size: 1rem;
+    }
+}
+
+
+@media (max-width:767px) {
+    #intro{flex-direction: column-reverse;}
+
+    .bg {
+        height: auto;
+        width: 60%;
+        right: -7rem;
+    }
+
+    .introPara {
+        font-size: 1rem;
+    }
+    
+}
+
+@media (max-width: 480) {
+
+    .bg {
+        height: auto;
+        width: 100%;
+        right: -2rem;
+    }
+
+    .hello {
+        font-size: 1rem;
+    }
+
+    .introText{
+        font-size: 1.4rem;
+    }
+
+    .introPara {
+        font-size: 1rem;
+    }
+}
