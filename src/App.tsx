@@ -18,7 +18,7 @@ function App() {
   }, [theme]);
 
   return (
-    <Router>
+    <Router basename="/portfolio">
       <div className={`container ${theme}`}>
         <Navbar theme={theme} setTheme={setTheme} />
         <Routes>
